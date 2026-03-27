@@ -14,7 +14,7 @@ const OrderSummary = () => {
   const handlePayment = async () => {
     try {
       const response = await fetch(
-        "http://localhost:3000/api/payments/create-checkout-session",
+        "/api/payments/create-checkout-session",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
