@@ -17,7 +17,7 @@ dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const__dirname=path.resolve();
+const __dirname=path.resolve();
 app.use(cors({
 	origin: "http://localhost:5173",
 	credentials: true,
@@ -41,6 +41,6 @@ if(process.env.NODE_ENV==="production"){
 
 
 app.listen(PORT,()=>{
-  console.log("Serveris running on http://localhost:"+PORT);
+  console.log("Server is running on http://localhost:"+PORT);
   connectDB();
 })
