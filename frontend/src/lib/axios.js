@@ -1,9 +1,10 @@
-// lib/axios.js
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:3000/api", 
-  withCredentials: true, 
+	baseURL: import.meta.env.MODE === "development" 
+		? "http://localhost:3000/api" 
+		: "/api", 
+	withCredentials: true,
 });
 
 export default axiosInstance;
