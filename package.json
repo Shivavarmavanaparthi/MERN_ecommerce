@@ -4,8 +4,8 @@
   "main": "backend/server.js",
   "scripts": {
     "dev": "nodemon backend/server.js",
-    "start":"node backend/server.js",
-    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "type": "module",
   "keywords": [],
@@ -16,13 +16,14 @@
     "bcryptjs": "^3.0.3",
     "cloudinary": "^2.9.0",
     "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "dotenv": "^17.3.1",
     "express": "^5.2.1",
     "ioredis": "^5.9.3",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.2.1",
+    "recharts": "^2.12.7",
     "stripe": "^20.3.1",
-    "zustand":"^4.5.5",
-    "recharts":"^2.12.7"
+    "zustand": "^4.5.5"
   }
 }
